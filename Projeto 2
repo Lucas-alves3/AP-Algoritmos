@@ -1,0 +1,23 @@
+#include <stdio.h>
+#define TAM 10
+
+int main(){
+    int vetor[TAM], i, contador = 0;
+    
+    printf("Digite 10 valores para o vetor:\n");
+    
+    for (i= 0; i < TAM; i++) {
+        scanf("%d",&vetor[i]);
+    }
+    
+    for (i = 0; i < TAM; i++) {
+        if (vetor[i] % 2 == 0){
+            contador++;
+        }
+    }
+    
+    printf("Existem %d valores pares", contador);
+    
+    return 0;
+}
+
