@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main(){
+   int array[6];
+   int i;
+   
+   printf("Digite 6 valores inteiros:\n");
+   for (i = 0; i < 6; i++) {
+       scanf("%d", &array[i]);
+   }
+   
+   printf("Valores em ordem inversa:\n");
+   
+   for (i = 5; i > 0; i--) {
+       printf("%d\n", array[i]);
+   }   
+   
+    
+    return 0;
+}
+
