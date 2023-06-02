@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int cubo(int numero) {
+   return numero * numero * numero;
+}
+
+int main() {
+   int num, resultado;
+
+   printf("Digite um número inteiro: ");
+   scanf("%d", &num);
+
+   resultado = cubo(num);
+
+   printf("O cubo de %d é %d.", num, resultado);
+   return 0;
+}
