@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+float divisao(int numerador, int denominador) {
+    if (denominador == 0) {
+        printf("ERRO: divisor igual a zero\n");
+        return 0;
+}
+return (float)numerador / denominador;
+}
+
+int main() {
+    int numero1, numero2;
+    float resultado;
+    
+    printf("Digite o numerador: ");
+    scanf("%d", &numero1);
+    
+    printf("Digite o denominador: ");
+    scanf("%d", &numero2);
+    
+    resultado = divisao(numero1, numero2);
+    
+    printf("A divisão entre %d e %d é: %.2f\n", numero1, numero2, resultado);
+    
+    return 0;
+}
